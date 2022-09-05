@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#titulo{
+    font-family: sans-serif;
+    color: rgb(87, 87, 87);
+    margin: 20px auto;
+    text-align: center;
+}
+#d_titulo{
+    background-color:#fafafa;
+    margin: 10px auto;
+    padding: 2%;
+    border-radius:5px ;
+    width: 600px;
+}
+p{
+    font-family: sans-serif;
+    color: rgb(54, 54, 54);
+    margin: 8px auto;
+    text-align: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(63, 63, 63), gray);
+    font-size: 1em;
+
+}
+form{
+    border-radius: 5px;
+    background-color: #fafafa;
+    padding: 2%;
+    width: 600px;
+}
+fieldset{
+    border: 0;
+}
+input, select, textarea, button{
+    border-radius: 5px;
+}
+.ip_txt{
+    padding: 5px 3px 5px 3px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 312px;
+}
+.ip_txt input[type="text"], .ip_txt input[type="email"], .ip_txt select, .ip_txt textarea{
+    display: block;
+    padding: 0.4em;
+    margin: 0px 20px 20px 0px;
+    border: 1px hidden black;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.521);
+    width: 300px;
+    font-size: 16px;
+    background-color: white;
+}
+#ip_telefone{
+    font-size: 16px;
+    margin: 0px 20px 20px 0px;
+    height: 18px;
+    padding: 0.4em;
+    width: 110px;
+    border: 1px hidden black;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.521);
+}
+#ip_ddd{
+    font-size: 16px;
+    height: 18px;
+    width: 40px;
+    padding: 0.4em;
+    border: 1px hidden black;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.521);
+}
+#slc_cobertura{
+    height: 30px;
+    margin: 2px auto 20px auto;
+}
+#d_cobertura{
+    margin-top: 20px;
+}
+#d_cobertura input[type="checkbox"]{
+    margin: 10px;
+}
+#d_txta{
+    margin: 20px auto;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+#d_enviar{
+    text-align: center;
+}
+#enviar{
+    text-align: center;
+    margin: 30px auto;
+    width: 120px;
+    height: 35px;
+    font-size: 18px;
+    border: 1px hidden;
+    text-transform: uppercase;
+    padding: 2px;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+    background-color: rgb(3, 96, 184);
+    color: white;
+    transition: 0.4s;
+}
+#enviar:hover{
+    text-align: center;
+    margin: 30px auto;
+    width: 120px;
+    height: 35px;
+    font-size: 18px;
+    border: 1px hidden;
+    text-transform: uppercase;
+    padding: 2px;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+    background-color: rgb(57, 159, 255);
+    color: white;
+}
+
+

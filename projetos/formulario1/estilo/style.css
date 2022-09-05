@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #055d74;
+    /* rgb(51, 197, 255);*/
+}
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+    width: 900px;
+    height: 120px;
+    border-radius: 3px;
+    margin: 20px auto;
+}
+h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 38px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    margin: 0px auto 80px auto;
+    width: 900px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.493);
+    text-align: center;
+}
+.subt{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(19, 114, 202);
+    text-align: center;
+    font-size: 20px;
+}
+.capdados{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(3, 33, 63);
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-top: 30px;
+}
+input{
+    margin-bottom: 30px;
+}
+.iptxt{
+    height: 35px;
+    width: 300px;
+    font-size: 19px;
+    border-style: hidden;
+    box-shadow: 0px 0px 3px rgb(0, 36, 153);
+    border-radius: 3px;
+}
+input#sexo{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+textarea#txtarea{
+    width: 500px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 16px;
+}
+input#btcad{
+    height: 50px;
+    width: 180px;
+    font-size: 25px;
+    border-style: hidden;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(19, 98, 151);
+    box-shadow: 0px 0px 3px rgba(0, 91, 196, 0.61);
+}
+.dadosusuario{
+    padding-bottom: 20px;
+    padding: 20px 40px 20px 40px;
+}
+.container section p{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}

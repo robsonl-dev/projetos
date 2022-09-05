@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+nav{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+li{
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+li a{
+    text-decoration: none;
+    color: gray;
+}
+li ul{
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    box-shadow: 0px 8px 16px 0px black;
+}
+li ul li{
+    clear: both;
+    width: 100%;
+}
+ul li:hover, ul li:focus-within{
+    background-color: greenyellow;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+a:hover{
+    color: red;
+}
+/* controle do menu drop*/
+ul li:hover>ul, ulli:focus-within>ul, ul li ul:hover, ul li ul:focus{
+    visibility: visible;
+    opacity: 0.5; /*visibilidade do menu drop down, 1 equivale a 100%*/
+    display: block;
+}

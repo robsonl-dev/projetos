@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+        <a href="../../index/index.html">PÁGINA INICIAL</a>
+        <a href="../projetos.html">PROJETOS</a>
+    </header>
+    <main>
+        <div id="inserir">
+       <span>Nº</span>  <input type="number" name="valor" id="valor">
+        <input type="button" id="bt"value="CALCULAR" onclick="bmulti(); bsoma()">
+        </div>
+        <div id="multi">Multiplicação</div>
+        <div id="adicao">Adição</div>
+        <script>
+            function bmulti(){
+                var resmulti = document.querySelector('div#multi')
+                let valm = document.querySelector('input#valor')
+                valm = Number(valm.value)
+                resmulti.innerHTML =
+               `${valm} x 0 = ${valm*0}</br>
+                ${valm} x 1 = ${valm*1}</br>
+                ${valm} x 2 = ${valm*2}</br>
+                ${valm} x 3 = ${valm*3}</br>
+                ${valm} x 4 = ${valm*4}</br>
+                ${valm} x 5 = ${valm*5}</br>
+                ${valm} x 6 = ${valm*6}</br>
+                ${valm} x 7 = ${valm*7}</br>
+                ${valm} x 8 = ${valm*8}</br>
+                ${valm} x 9 = ${valm*9}</br>
+                ${valm} x 10 = ${valm*10}</br>`
+            }
+            function bsoma(){
+                var ressoma = document.querySelector('div#adicao')
+                let vals = document.querySelector('input#valor')
+                vals = Number(vals.value)
+                ressoma.innerHTML =
+               `${vals} + 0 = ${vals+0}</br>
+                ${vals} + 1 = ${vals+1}</br>
+                ${vals} + 2 = ${vals+2}</br>
+                ${vals} + 3 = ${vals+3}</br>
+                ${vals} + 4 = ${vals+4}</br>
+                ${vals} + 5 = ${vals+5}</br>
+                ${vals} + 6 = ${vals+6}</br>
+                ${vals} + 7 = ${vals+7}</br>
+                ${vals} + 8 = ${vals+8}</br>
+                ${vals} + 9 = ${vals+9}</br>
+                ${vals} + 10 = ${vals+10}</br>` 
+            }
+        </script>
+    </main>
+</body>
+</html>

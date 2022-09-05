@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../../index/index.html">HOME</a>
+    <section>
+    <header>
+    <h1>Benefícios do Brasil</h1>
+    <h2>PBE - Programa de Benefícios Estadual</h2>
+    </header>
+
+    <div id="lista">
+        <ol>
+            <li>Ceará</li>
+            <li>Goiás</li>
+            <li>São Paulo</li>
+            <li>Amazonas</li>
+            <li>Bahia</li>
+            <li>Roraima</li>
+        </ol>
+    <p>Insira o número referente ao seu estado</p>
+     Seu nome:  <input type="text" name="txtn" id="txtn">
+    Seu estado: <input type="number" name="ipn1" id="ipn1">
+    <input type="button" value="ANALISAR" id ="botao" onclick="verificar()">
+    </div>
+    <div id="res">AGUARDANDO PREENCHIMENTO DOS CAMPOS ACIMA...</div>
+
+    <script>
+        function verificar() {
+            var nome = window.document.getElementById('txtn')
+            var estado = window.document.getElementById('ipn1')
+            var estado = Number(ipn1.value)
+            var resultado = window.document.getElementById('res')
+            if(estado == 1){
+                resultado.innerHTML = `${nome.value} seu benefício é <strong>ALIMENTAÇÃO</strong>`
+            }else{
+               if(estado == 2){
+                    resultado.innerHTML =`${nome.value}, seu benefício é <strong>TRANSPORTE</strong>`
+                }else if(estado == 3){
+                    resultado.innerHTML =`${nome.value}, seu benefício é <strong>SAÚDE</strong>`
+                }if(estado == 4){
+                    resultado.innerHTML =`${nome.value}, seu benefício é <strong>EDUCAÇÃO</strong>`
+                }else if(estado == 5){
+                    resultado.innerHTML=`${nome.value}, seu benefício é <strong>MORADIA</strong>`
+                }if(estado == 6){
+                    resultado.innerHTML =`${nome.value}, seu benefício é <strong>APOSENTADORIA</strong>`
+                }else if(estado >= 7 || estado <= 0 ){
+                    alert('Escolha um estado')
+                }
+            }
+            
+        }
+    </script>
+    </section>
+</body>
+</html>

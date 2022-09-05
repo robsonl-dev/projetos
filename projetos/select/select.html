@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    NOMES<p style="margin:0px;"><select name="lista" id="lista" autofocus></p>
+        <option value="Selecione um nome...">Membro da familia...</option>
+        <option value="Robson">Robson</option>
+        <option value="Elaine">Elaine</option>
+        <option value="Fernanda">Fernanda</option>
+        <option value="M.Eduarda">M.Eduarda</option>
+        <option value="M.Victoria">M.Victoria</option>
+        <input type="button" value="Selecionar nome" onclick="executar()">
+    </select>
+
+    <p style="margin-top: 50px; margin-bottom:0px;">CORES</p><p style="margin:0px;"><select ></p>
+    <option disabled value="Branco">Branco</option>
+    <option value="Azul">Azul</option>
+    <option disabled value="Preto">Preto</option>
+    <option value="Lilás">Lilás</option>
+    </select>
+
+    <p style="margin-bottom: 0px; margin-top: 50px;">ESTADOS</p><p style="margin:0px;"><select name="cep" id="cep"></p>
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espírito Santo</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB">Paraíba</option>
+    <option value="PR">Paraná</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraima</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="SE">Sergipe</option>
+    <option value="TO">Tocantins</option>
+    <option value="EX">Estrangeiro</option>
+    </select>
+    <script>
+        function executar(){
+        var nome = document.querySelector('select#lista')
+        var nomes = document.querySelector('div#nselecionado')
+        var estado = document.querySelector('select#cep')
+        var estados = document.querySelector('div#eselecionado')
+        if(nome.value == 'Selecione um nome...'){
+            nomes.innerHTML = 'Por favor selecione um membro da familia para prosseguir!'
+        }else if(nome.value =='Robson'){
+            nomes.innerHTML = `Pai, 30 anos`
+        }else if(nome.value =='Elaine'){
+            nomes.innerHTML = `Mãe, 30 anos`
+        }else if(nome.value =='M.Eduarda'){
+            nomes.innerHTML = `Primeira filha, 10 anos`
+        }else if(nome.value =='M.Victoria'){
+            nomes.innerHTML = `Segunda filha, 9 anos`
+        }else if(nome.value =='Fernanda'){
+            nomes.innerHTML = `Terceira filha, 4 anos`
+        }
+        estados.innerHTML = estado.value
+    }
+    </script>
+    
+    <div style="margin-top: 100px;" id="nselecionado">
+        Nome selecionado...
+    </div>
+
+    <div style="margin-top: 30px;" id="eselecionado">
+        Estado selecionado...
+    </div>
+</body>
+</html>

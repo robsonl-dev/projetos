@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <a style="font-size:20px; color:white; text-decoration: none;" href="../../index/index.html">Página Inicial</a>
+    <a style="font-size:20px; color:white; text-decoration: none;" href="../projetos.html">Projetos</a>
+    <header class="cabecalho">
+        <h1>Formulário 1</h1>
+    </header>   
+        <main class="container">
+            <form class="dadosusuario">
+                <div class="subt">
+                    <h2>Pré-Cadastro</h2>
+                </div>
+            <div class="capdados">
+                <input class ="iptxt"type="text" name="nome" id="nome" placeholder="Nome"><br>
+                <input class ="iptxt"type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome"><br>
+                <input class="iptxt"type="email" name="email" id="email" placeholder="Email"><br>
+                <input class="iptxt"type="tel" name="telefone" id="telefone" placeholder="Telefone"><br>
+                <label for="sexo">Sexo:</label><input type="radio" name="sexo" id="sexo" checked> Masculino
+                <input type="radio" name="sexo" id="sexo"> Feminino<br>
+                <input class="iptxt"type="text" name="nomeusuario" id="nomeusuario" placeholder="Nome de Usuário"><br>
+                <input class="iptxt"type="password" name="senha" id="senha" placeholder="Senha"><br>
+                <textarea name="txtarea" id="txtarea" rows="10" placeholder="Digite aqui seu texto..."></textarea> <br>
+                <input type="button" name="btcad" id="btcad" value="CADASTRAR" onclick="cad()"><br>
+            </div>
+            </form>
+            <script src="js/script.js"></script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario2.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <a style="text-decoration: none;color:white;font-size:18px;" href="../../index/index.html">Página Inicial</a>
+    <a style="text-decoration: none;color:white;font-size:18px;" href="../projetos.html">Projetos</a>
+
+    <div id="d_titulo">
+        <h1 id="titulo">Requerimento de Suporte Técnico</h1>
+        <p>Preencha os campos abaixo para enviar a solicitação</p>
+    </div>
+
+    <form action="">
+        <fieldset>
+            <!--pattern={2,20} Min. e Max.-->
+
+            <div class="ip_txt">
+                <label for="ip_nome"><strong>Nome</strong></label>
+                <input type="text" name="ip_nome" id="ip_nome" pattern="[A-Za-z]{2,20}" required>
+            </div>
+            <div class="ip_txt">
+                <label for="ip_sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="ip_sobrenome" id="ip_sobrenome" pattern="[A-Za-z]{2,35}" required>
+            </div>
+            <div class="ip_txt">
+                <label for="ip_email"><strong>Email</strong></label>
+                <input type="text" name="ip_email" id="ip_email"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            </div>
+            <!--pattern=[0-9] caracteres permitidos/ {11} quantidade exata-->
+            <div class="ip_txt">
+                <label for="ip_telefone"><strong><strong>Telefone</strong></strong></label><br>
+                <input type="tel" name="ip_ddd" id="ip_ddd" pattern="[0-9]{2}" maxlength="2" required><strong> -  </strong>
+                <input type="tel" name="ip_telefone" id="ip_telefone" pattern="[0-9]{9}" placeholder="99999-9999" maxlength="9" required> 
+            </div>
+            <div>
+                <label for=""><strong>Esse telefone é WhatsApp/ Telegram?</strong></label><br>
+                <label for="ip_wp_ou_tl">
+                    <br><input type="radio" name="ip_wp_ou_tl" id="ip_wp_ou_tl" checked> Sim <br>
+                </label>
+                <label for="ip_wp_ou_tl">
+                    <br><input type="radio" name="ip_wp_ou_tl" id="ip_wp_ou_tl"> Não <br><br>
+                </label>
+            </div>           
+        </fieldset>
+
+        <div>
+            <label for=""><strong>Como conheceu nosso site?</strong></label><br>
+            <label for="ip_origem">
+                <br><input type="radio" name="ip_origem" id="ip_origem" checked> Google<br>
+            </label>
+            <label for="ip_indicacao">
+                <br><input type="radio" name="ip_origem" id="ip_origem"> Indicação<br>
+            </label>
+            <label for="ip_aplivativo">
+                <br><input type="radio" name="ip_origem" id="ip_origem"> Aplicativos<br><br>
+            </label>
+        </div>
+        <div>
+            <label for=""><strong>Cobertura de suporte</strong></label><br>
+            <select name="slc_cobertura" id="slc_cobertura">
+                <option value="" selected disabled>Selecione</option>
+                <option value="">Manhã 06:00 / 12:00</option>
+                <option value="">Tarde 12:00 / 18:00</option>
+                <option value="">Noite 18:00 / 00:00</option>
+                <option value="">Madrugada 00:00 / 06:00</option>
+                <option value="">Comercial 08:00 / 18:00</option>
+                <option value="">Diário 08:00 / 18:00</option>
+                <option value="">24 horas 7 dias</option>
+            </select>
+        </div>
+        <fieldset>
+            <div id="d_cobertura">
+                <label for=""><strong>Quais tipos de suporte necessita?</strong></label><br>
+                <input type="checkbox" name="ip_sup_remoto" id="ip_sup_remoto">
+                <label for="ip_sup_tipo">Remoto</label><br>
+                <input type="checkbox" name="ip_sup_inloco" id="ip_sup_inloco">
+                <label for="ip_sup_inloco">Presencial</label><br>
+                <input type="checkbox" name="ip_sup_rem_loco" id="ip_sup_rem_loco">
+                <label for="ip_sup_rem_loco">Remoto e Presencial</label><br>
+                <input type="checkbox" name="ip_sup_campo" id="ip_sup_campo">
+                <label for="ip_sup_campo">Field Service</label><br>
+                <input type="checkbox" name="ip_sup_rede" id="ip_sup_rede">
+                <label for="ip_sup_rede">Administração de Redes</label><br>
+            </div>
+        </fieldset>
+        <div id="d_txta">
+            <label for=""><strong>Fale um pouco sobre os incidentes mais recorrentes em sua empresa</strong></label><br>
+            <textarea style="width: 500px;" name="txta_incidentes" id="txta_incidentes" cols="20" rows="20" minlength="100"></textarea>
+        </div>
+        <div id="d_enviar">
+            <button id="enviar" type="submit">Enviar</button>
+        </div>
+    </form>    
+</body>
+</html>

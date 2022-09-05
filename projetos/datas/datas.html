@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datas</title>
+    <style>
+         *{
+            font-family: sans-serif;
+        }
+        body{
+            background-attachment: fixed;
+            background-image: linear-gradient(rgb(0, 0, 0), rgb(185, 185, 185));
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            background-color: red;
+            padding: 5px;
+            border-radius: 8px;
+        }
+        h1{
+            color: white;
+        }
+        div{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">HOME</a>
+    <main>
+        <section>
+            <div><h1>DATAS - SORTEIOS</h1></div>
+           <div>DIGITE UM DIA DA SEMANA ENTRE DOMINGO E SÁBADO  <input type="text" name="txt1" id="txt1"></div>
+           <input type="button" value="SORTEAR" >
+           <p id="res">Resultado:</p>
+           <script>
+              
+                var dia = 3
+
+                resultado = window.document.getElementById('res')
+
+                switch (dia){
+                    case 1:
+                    resultado.innerHTML = `Você venceu`
+                    break
+
+                    case 2:
+                        resultado.innerHTML = `Você perdeu`
+                    break
+
+                    default:
+                        resultado.innerHTML = `digite um número válido`
+                        break
+
+                }
+    
+            
+
+           </script>             
+        </section>
+    </main>
+</body>
+</html>

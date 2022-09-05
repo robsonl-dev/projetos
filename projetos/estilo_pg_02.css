@@ -1,0 +1,65 @@
+@charset "UTF--8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Títulos: font-family: 'Nunito', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+/* Textos: font-family: 'Libre Baskerville', serif; */
+
+:root{
+    --fh1: 'Nunito', sans-serif;
+    --ftexto: 'Libre Baskerville', serif;
+}
+*{
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(202, 202, 202);
+}
+header{
+    background-color: #3f3f3f;
+}
+h1{
+    text-transform: uppercase;
+    font-family: var(--fh1);
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    padding: 15px 0px 30px 20px;
+}
+a#home{
+    color: white;
+    padding-left: 22px;
+    text-decoration: none;
+}
+a#home:hover{
+    background-color: white;
+    padding: 15px 10px 0px 10px;
+    border-radius: 4px;
+    color: black;
+
+}
+main{
+    background-color: white;
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 50px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.425);
+}
+main > ul > li{
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+li > a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0000EF;
+}
+li > a:hover{
+    background-color: #3f3f3f;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+}

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap');
+
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color:#032b55; 
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 7px rgb(0, 0, 0);
+    background-color: rgb(236, 236, 236);
+    margin: 0px auto;
+    margin-top: 10px;
+    width: 450px;
+    height: 120px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+}
+h1{
+font-size: 50px;
+color: rgb(121, 121, 121);
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+section{
+    /*display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;*/
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0px 0px 7px rgb(0, 0, 0);
+    margin: 0px auto;
+    margin-top: 60px;
+    border-radius: 40px;
+    height: 600px;
+    width: 450px;
+}
+div#dia{
+    width: 350px;
+    height: 100px;
+    font-size: 60px;
+    margin: 0px auto;
+    border-radius: 30px;
+    /*box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.404);
+    background-color: rgb(236, 236, 236);
+    font-size: 60px;
+    background-color: rgb(236, 236, 236);*/
+    text-align: center;
+    padding-bottom: 10px;
+}
+div#horas{
+    color: #6C7A89;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 100px;
+    font-size: 60px;
+    margin: 0px auto;
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.404);
+    background-color: rgb(236, 236, 236);
+}
+img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 20px;
+    margin-bottom: 80px;
+}
+a{
+    font-size: 20px;
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+a:hover{
+    background-color: black;
+    color: white;
+}
+
